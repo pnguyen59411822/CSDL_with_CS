@@ -94,18 +94,18 @@
             // 
             // txt_server
             // 
-            this.txt_server.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_server.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_server.Location = new System.Drawing.Point(214, 93);
             this.txt_server.Name = "txt_server";
-            this.txt_server.Size = new System.Drawing.Size(574, 26);
+            this.txt_server.Size = new System.Drawing.Size(574, 23);
             this.txt_server.TabIndex = 4;
             // 
             // txt_database
             // 
-            this.txt_database.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_database.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_database.Location = new System.Drawing.Point(214, 135);
             this.txt_database.Name = "txt_database";
-            this.txt_database.Size = new System.Drawing.Size(574, 26);
+            this.txt_database.Size = new System.Drawing.Size(574, 23);
             this.txt_database.TabIndex = 6;
             // 
             // label4
@@ -150,10 +150,10 @@
             // txt_user
             // 
             this.txt_user.Enabled = false;
-            this.txt_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_user.Location = new System.Drawing.Point(214, 249);
             this.txt_user.Name = "txt_user";
-            this.txt_user.Size = new System.Drawing.Size(574, 26);
+            this.txt_user.Size = new System.Drawing.Size(574, 23);
             this.txt_user.TabIndex = 11;
             // 
             // lb_user
@@ -170,10 +170,10 @@
             // txt_pass
             // 
             this.txt_pass.Enabled = false;
-            this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pass.Location = new System.Drawing.Point(214, 290);
             this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(574, 26);
+            this.txt_pass.Size = new System.Drawing.Size(574, 23);
             this.txt_pass.TabIndex = 13;
             // 
             // lb_pass

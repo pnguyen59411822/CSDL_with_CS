@@ -40,7 +40,7 @@ namespace Bai1_KetNoi
         private void frm_main_Load(object sender, EventArgs e)
         {
             const string DEFAULT_SERVER = "DESKTOP-L72T38U\\SQLEXPRESS";
-            const string DEFAULT_DATABASE = "";
+            const string DEFAULT_DATABASE = "HoaDon";
 
             lb_user.ForeColor = Color.LightSteelBlue;
             lb_pass.ForeColor = Color.LightSteelBlue;
