@@ -142,5 +142,10 @@ namespace Bai2_Command
         {
             Close();
         }
+
+        private void btn_load_Click(object sender, EventArgs e)
+        {
+            load_data();
+        }
     }
 }
