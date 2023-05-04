@@ -237,6 +237,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_main";
             this.Text = "Khách Hàng";
+            this.Load += new System.EventHandler(this.Frm_main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
