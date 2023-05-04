@@ -36,6 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.windowsUIButtonPanel1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
             this.SuspendLayout();
             // 
             // label1
@@ -110,11 +112,33 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Số điện thoại";
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(50, 206);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(708, 207);
+            this.listView1.TabIndex = 8;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // windowsUIButtonPanel1
+            // 
+            this.windowsUIButtonPanel1.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton(),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton()});
+            this.windowsUIButtonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.windowsUIButtonPanel1.Name = "windowsUIButtonPanel1";
+            this.windowsUIButtonPanel1.Size = new System.Drawing.Size(75, 23);
+            this.windowsUIButtonPanel1.TabIndex = 9;
+            this.windowsUIButtonPanel1.Text = "windowsUIButtonPanel1";
+            // 
             // Frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.windowsUIButtonPanel1);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
@@ -142,6 +166,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListView listView1;
+        private DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel windowsUIButtonPanel1;
     }
 }
 
