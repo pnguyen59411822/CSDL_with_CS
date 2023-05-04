@@ -147,5 +147,30 @@ namespace Bai2_Command
         {
             load_data();
         }
+
+        private void btn_view_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = get_sqlCommand("Select * from KhachHang");
+            SqlDataReader rdr = cmd.ExecuteReader();
+            string str = "";
+
+            for (int i = 0; i < rdr.FieldCount; ++i)
+            {
+                str += rdr.GetName(i) + "\t";
+            }
+            str += "\n";
+
+            while (rdr.Read())
+            {
+                for (int i = 0; i < rdr.FieldCount; ++i)
+                {
+                    str += rdr.GetValue(i) + "\t";
+                }
+                str += "\n";
+            }    
+
+            MessageBox.Show(str);
+            rdr.Close();
+        }
     }
 }

@@ -181,6 +181,7 @@
             this.btn_view.TabIndex = 12;
             this.btn_view.Text = "Xem";
             this.btn_view.UseVisualStyleBackColor = true;
+            this.btn_view.Click += new System.EventHandler(this.btn_view_Click);
             // 
             // btn_edit
             // 
