@@ -120,12 +120,16 @@
             // 
             // lv_data
             // 
+            this.lv_data.FullRowSelect = true;
+            this.lv_data.GridLines = true;
             this.lv_data.HideSelection = false;
             this.lv_data.Location = new System.Drawing.Point(50, 206);
+            this.lv_data.MultiSelect = false;
             this.lv_data.Name = "lv_data";
             this.lv_data.Size = new System.Drawing.Size(829, 207);
-            this.lv_data.TabIndex = 8;
+            this.lv_data.TabIndex = 14;
             this.lv_data.UseCompatibleStateImageBehavior = false;
+            this.lv_data.View = System.Windows.Forms.View.Details;
             // 
             // btn_exit
             // 
@@ -138,6 +142,7 @@
             this.btn_exit.TabIndex = 10;
             this.btn_exit.Text = "Thoát";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // btn_load
             // 
@@ -186,7 +191,6 @@
             this.btn_edit.TabIndex = 15;
             this.btn_edit.Text = "Sửa";
             this.btn_edit.UseVisualStyleBackColor = true;
-            this.btn_edit.Click += new System.EventHandler(this.button5_Click);
             // 
             // btn_add
             // 
@@ -234,7 +238,7 @@
             this.Controls.Add(this.txt_maKH);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_main";
             this.Text = "Khách Hàng";
             this.Load += new System.EventHandler(this.Frm_main_Load);
