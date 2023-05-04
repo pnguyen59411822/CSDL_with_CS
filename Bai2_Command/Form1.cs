@@ -97,11 +97,11 @@ namespace Bai2_Command
             }
         }
 
-        private void load_txts()
+        private void load_txts(int ind_item=0)
         {
             try
             {
-                ListViewItem item = lv_data.Items[0];
+                ListViewItem item = lv_data.Items[ind_item];
 
                 txt_maKH.Text = item.SubItems[0].Text;
                 txt_tenKH.Text = item.SubItems[1].Text;
@@ -130,6 +130,12 @@ namespace Bai2_Command
         {
             connect_sql();
             load_data();
+        }
+
+        private void lv_data_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(lv_data.SelectedIndices.Count == 0) { return; }
+            load_txts(lv_data.SelectedIndices[0]);
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
