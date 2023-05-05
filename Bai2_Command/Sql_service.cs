@@ -76,6 +76,7 @@ namespace Bai2_Command
         {
             try
             {
+                cnn.Close();
                 cnn.Open();
                 MessageBox.Show("Kết nối sql server thành công");
             }
