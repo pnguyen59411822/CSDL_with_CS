@@ -192,6 +192,7 @@
             this.btn_add.TabIndex = 12;
             this.btn_add.Text = "Thêm";
             this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // btn_edit
             // 

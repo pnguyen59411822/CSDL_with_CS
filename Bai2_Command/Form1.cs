@@ -78,6 +78,27 @@ namespace Bai2_Command
             }
         }
 
+        private void enable_txts()
+        {
+            foreach(Control ctrl in this.Controls)
+            {
+                if(ctrl is TextBox)
+                {
+                    ((TextBox)ctrl).Enabled = true;
+                }
+            }
+        }
+        private void clear_txts()
+        {
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is TextBox)
+                {
+                    ((TextBox)ctrl).Text = "";
+                }
+            }
+        }
+
         private void Frm_main_Load(object sender, EventArgs e)
         {
 
@@ -99,6 +120,12 @@ namespace Bai2_Command
         private void lv_data_SelectedIndexChanged(object sender, EventArgs e)
         {
             load_txts();
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            enable_txts();
+            clear_txts();
         }
     }
 }
