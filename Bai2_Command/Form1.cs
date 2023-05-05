@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -148,9 +149,39 @@ namespace Bai2_Command
             }
         }
 
+        private void clear_txts()
+        {
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is TextBox)
+                {
+                    ((TextBox)ctrl).Text = "";
+                }
+            }
+        }
+
         private void add_data()
         {
+            string str = "insert into KhachHang (MaKH, TenKH, DCKH, DTKH) "
+                     + "values(@MaKH,@TenKH,@DCKH,@DTKH)";
 
+            try
+            {
+                SqlCommand cmd = get_sqlCommand(str);
+                cmd.Parameters.Add("@MaKH", SqlDbType.Float).Value = float.Parse(txt_maKH.Text);
+                cmd.Parameters.Add("@TenKH", SqlDbType.NVarChar).Value = txt_tenKH.Text;
+                cmd.Parameters.Add("@DCKH", SqlDbType.NVarChar).Value = txt_diaChi.Text;
+                cmd.Parameters.Add("@DTKH", SqlDbType.NVarChar).Value = txt_SDT.Text;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Thêm thất bại" + ex.Message);
+            }
+
+            load_data();
         }
 
 
@@ -226,6 +257,13 @@ namespace Bai2_Command
             }
             else
                 MessageBox.Show("Chưa có thay đổi để lưu");
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            clear_txts();
+            enable_txts();
+            state = STATE_ADD;
         }
     }
 }
