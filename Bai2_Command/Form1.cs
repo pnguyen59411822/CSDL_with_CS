@@ -187,7 +187,29 @@ namespace Bai2_Command
 
         private void edit_data()
         {
+            string str = "update KhachHang set "
+                     + "TenKH=@TenKH"
+                     + ",DCKH=@DCKH"
+                     + ",DTKH=@DCKH"
+                     + " where MaKH=@MaKH";
 
+            try
+            {
+                SqlCommand cmd = get_sqlCommand(str);
+                cmd.Parameters.Add("@MaKH", SqlDbType.Float).Value = float.Parse(txt_maKH.Text);
+                cmd.Parameters.Add("@TenKH", SqlDbType.NVarChar).Value = txt_tenKH.Text;
+                cmd.Parameters.Add("@DCKH", SqlDbType.NVarChar).Value = txt_diaChi.Text;
+                cmd.Parameters.Add("@DTKH", SqlDbType.NVarChar).Value = txt_SDT.Text;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Thêm thất bại" + ex.Message);
+            }
+
+            load_data();
         }
 
         public Frm_main()
@@ -264,6 +286,12 @@ namespace Bai2_Command
             clear_txts();
             enable_txts();
             state = STATE_ADD;
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            enable_txts();
+            state = STATE_EDIT;
         }
     }
 }

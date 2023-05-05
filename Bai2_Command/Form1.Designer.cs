@@ -195,6 +195,7 @@
             this.btn_edit.TabIndex = 15;
             this.btn_edit.Text = "Sửa";
             this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_add
             // 
