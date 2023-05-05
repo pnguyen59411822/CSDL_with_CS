@@ -72,6 +72,36 @@ namespace Bai2_Command
             }
         }
 
+        static public void edit_KH(float maKH_prv, float maKH, string tenKH, string diaChi, string SDT)
+        {
+            string str = "update KhachHang set "
+                       + "MaKH=@MaKH"
+                       + ",TenKH=@TenKH"
+                       + ",DCKH=@DCKH"
+                       + ",DTKH=@DTKH"
+                       + " where MaKH=@MaKH_prv";
+
+            try
+            {
+                SqlCommand cmd = crt_cmd();
+                cmd.CommandText = str;
+
+                cmd.Parameters.Add("@MaKH", maKH);
+                cmd.Parameters.Add("@TenKH", tenKH);
+                cmd.Parameters.Add("@DCKH", diaChi);
+                cmd.Parameters.Add("@DTKH", SDT);
+                cmd.Parameters.Add("@MaKH_prv", maKH_prv);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Sửa dữ liệu thành công");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Sửa dữ liệu thất bại. Nguyên nhân:\n" + ex.Message);
+            }
+        }
+
         static public void connect_sql()
         {
             try

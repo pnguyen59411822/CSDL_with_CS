@@ -207,6 +207,7 @@
             this.btn_edit.TabIndex = 13;
             this.btn_edit.Text = "Sửa";
             this.btn_edit.UseVisualStyleBackColor = false;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_rmv
             // 

@@ -127,6 +127,19 @@ namespace Bai2_Command
              );
         }
 
+        private void edit_data()
+        {
+            float maKH_prv = float.Parse(lv_data.SelectedItems[0].SubItems[0].Text);
+
+            Sql_service.edit_KH(
+                maKH_prv,
+                float.Parse(txt_maKH.Text),
+                txt_tenKH.Text,
+                txt_diaChi.Text,
+                txt_SDT.Text
+             );
+        }
+
         private void Frm_main_Load(object sender, EventArgs e)
         {
 
@@ -170,13 +183,25 @@ namespace Bai2_Command
             }    
 
             else if(state == STATE_EDIT){
-                // edit_data
+                edit_data();
             }
 
             disable_txts();
             load_lv();
             load_txts();
             state = STATE_NO_CHANGE;
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            if (lv_data.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Sửa dữ liệu thất bại. Nguyên nhân:\nBạn chưa chọn dòng cần sửa");
+                return;
+            }
+
+            enable_txts();
+            state = STATE_EDIT;
         }
     }
 }
