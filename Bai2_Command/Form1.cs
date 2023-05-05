@@ -26,5 +26,10 @@ namespace Bai2_Command
         {
             this.Close();
         }
+
+        private void btn_load_Click(object sender, EventArgs e)
+        {
+            Sql_service.connect_sql();
+        }
     }
 }
