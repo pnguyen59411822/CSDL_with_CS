@@ -36,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_SDT = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.lv_data = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +55,7 @@
             this.txt_maKH.Enabled = false;
             this.txt_maKH.Location = new System.Drawing.Point(197, 17);
             this.txt_maKH.Name = "txt_maKH";
-            this.txt_maKH.Size = new System.Drawing.Size(689, 23);
+            this.txt_maKH.Size = new System.Drawing.Size(703, 23);
             this.txt_maKH.TabIndex = 1;
             // 
             // txt_tenKH
@@ -62,7 +63,7 @@
             this.txt_tenKH.Enabled = false;
             this.txt_tenKH.Location = new System.Drawing.Point(197, 56);
             this.txt_tenKH.Name = "txt_tenKH";
-            this.txt_tenKH.Size = new System.Drawing.Size(689, 23);
+            this.txt_tenKH.Size = new System.Drawing.Size(703, 23);
             this.txt_tenKH.TabIndex = 3;
             // 
             // label2
@@ -81,7 +82,7 @@
             this.txt_diaChi.Enabled = false;
             this.txt_diaChi.Location = new System.Drawing.Point(197, 96);
             this.txt_diaChi.Name = "txt_diaChi";
-            this.txt_diaChi.Size = new System.Drawing.Size(689, 23);
+            this.txt_diaChi.Size = new System.Drawing.Size(703, 23);
             this.txt_diaChi.TabIndex = 5;
             // 
             // label3
@@ -100,7 +101,7 @@
             this.txt_SDT.Enabled = false;
             this.txt_SDT.Location = new System.Drawing.Point(197, 136);
             this.txt_SDT.Name = "txt_SDT";
-            this.txt_SDT.Size = new System.Drawing.Size(689, 23);
+            this.txt_SDT.Size = new System.Drawing.Size(703, 23);
             this.txt_SDT.TabIndex = 7;
             // 
             // label4
@@ -114,12 +115,25 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Số điện thoại";
             // 
+            // lv_data
+            // 
+            this.lv_data.FullRowSelect = true;
+            this.lv_data.HideSelection = false;
+            this.lv_data.Location = new System.Drawing.Point(37, 190);
+            this.lv_data.MultiSelect = false;
+            this.lv_data.Name = "lv_data";
+            this.lv_data.Size = new System.Drawing.Size(863, 205);
+            this.lv_data.TabIndex = 8;
+            this.lv_data.UseCompatibleStateImageBehavior = false;
+            this.lv_data.View = System.Windows.Forms.View.Details;
+            // 
             // Frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(934, 519);
+            this.Controls.Add(this.lv_data);
             this.Controls.Add(this.txt_SDT);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_diaChi);
@@ -147,6 +161,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_SDT;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListView lv_data;
     }
 }
 
