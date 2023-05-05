@@ -52,6 +52,32 @@ namespace Bai2_Command
             }
         }
 
+        private void load_txts()
+        {
+            try
+            {
+                ListViewItem item;
+
+                if (lv_data.SelectedIndices.Count == 0){
+                    item = lv_data.Items[0];
+                }
+
+                else                {
+                    item = lv_data.Items[lv_data.SelectedIndices[0]];
+                }
+
+                txt_maKH.Text = item.SubItems[0].Text;
+                txt_tenKH.Text = item.SubItems[1].Text;
+                txt_diaChi.Text = item.SubItems[2].Text;
+                txt_SDT.Text = item.SubItems[3].Text;
+            }
+
+            catch( Exception ex )
+            {
+                MessageBox.Show("Load textboxes thất bại. Nguyên nhân:\n" + ex.Message);
+            }
+        }
+
         private void Frm_main_Load(object sender, EventArgs e)
         {
 
@@ -66,6 +92,7 @@ namespace Bai2_Command
         {
             Sql_service.connect_sql();
             load_lv();
+            load_txts();
         }
     }
 }
