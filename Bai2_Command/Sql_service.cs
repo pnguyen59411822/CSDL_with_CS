@@ -47,6 +47,31 @@ namespace Bai2_Command
             return cmd;
         }
 
+        static public void add_KH(float maKH, string tenKH, string diaChi, string SDT)
+        {
+            string str = "insert into KhachHang (MaKH, TenKH, DCKH, DTKH)"
+                       + " values(@MaKH, @TenKH, @DCKH, @DTKH)";
+
+            try
+            {
+                SqlCommand cmd = crt_cmd();
+                cmd.CommandText = str;
+
+                cmd.Parameters.Add("@MaKH", maKH);
+                cmd.Parameters.Add("@TenKH", tenKH);
+                cmd.Parameters.Add("@DCKH", diaChi);
+                cmd.Parameters.Add("@DTKH", SDT);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm dữ liệu thành công");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Thêm dữ liệu thất bại. Nguyên nhân:\n" + ex.Message);
+            }
+        }
+
         static public void connect_sql()
         {
             try

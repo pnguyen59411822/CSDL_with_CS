@@ -13,6 +13,12 @@ namespace Bai2_Command
 {
     public partial class Frm_main : Form
     {
+        const int STATE_NO_CHANGE = 0;
+        const int STATE_ADD = 1;
+        const int STATE_EDIT = 2;
+
+        private int state = STATE_NO_CHANGE;
+
         public Frm_main()
         {
             InitializeComponent();
@@ -88,6 +94,18 @@ namespace Bai2_Command
                 }
             }
         }
+
+        private void disable_txts()
+        {
+            foreach(Control ctrl in this.Controls)
+            {
+                if(ctrl is TextBox)
+                {
+                    ((TextBox)ctrl).Enabled = false;
+                }
+            }
+        }
+
         private void clear_txts()
         {
             foreach (Control ctrl in this.Controls)
@@ -97,6 +115,16 @@ namespace Bai2_Command
                     ((TextBox)ctrl).Text = "";
                 }
             }
+        }
+
+        private void add_data()
+        {
+            Sql_service.add_KH(
+                float.Parse(txt_maKH.Text),
+                txt_tenKH.Text,
+                txt_diaChi.Text,
+                txt_SDT.Text
+             );
         }
 
         private void Frm_main_Load(object sender, EventArgs e)
@@ -126,6 +154,29 @@ namespace Bai2_Command
         {
             enable_txts();
             clear_txts();
+            state = STATE_ADD;
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            if(state == STATE_NO_CHANGE)
+            {
+                MessageBox.Show("Chưa có thay đổi cần lưu");
+                return;
+            }    
+
+            if(state == STATE_ADD){
+                add_data();
+            }    
+
+            else if(state == STATE_EDIT){
+                // edit_data
+            }
+
+            disable_txts();
+            load_lv();
+            load_txts();
+            state = STATE_NO_CHANGE;
         }
     }
 }

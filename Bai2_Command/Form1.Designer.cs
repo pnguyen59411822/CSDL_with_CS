@@ -234,6 +234,7 @@
             this.btn_save.TabIndex = 15;
             this.btn_save.Text = "Lưu";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // panel1
             // 
