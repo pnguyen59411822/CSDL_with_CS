@@ -266,6 +266,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_main";
             this.Text = "Danh sách khách hàng";
+            this.Load += new System.EventHandler(this.Frm_main_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

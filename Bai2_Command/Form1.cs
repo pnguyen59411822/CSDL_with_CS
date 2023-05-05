@@ -16,5 +16,10 @@ namespace Bai2_Command
         {
             InitializeComponent();
         }
+
+        private void Frm_main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
