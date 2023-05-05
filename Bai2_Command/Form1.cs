@@ -121,6 +121,17 @@ namespace Bai2_Command
             load_txts();
         }
 
+        private void disable_txts()
+        {
+            foreach (Control ctrl in this.Controls)
+            {
+                if(ctrl is TextBox)
+                {
+                    ((TextBox)ctrl).Enabled = false;
+                }    
+            }    
+        }
+
         public Frm_main()
         {
             InitializeComponent();
@@ -130,6 +141,7 @@ namespace Bai2_Command
         {
             connect_sql();
             load_data();
+            disable_txts();
         }
 
         private void lv_data_SelectedIndexChanged(object sender, EventArgs e)
@@ -171,6 +183,11 @@ namespace Bai2_Command
 
             MessageBox.Show(str);
             rdr.Close();
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
