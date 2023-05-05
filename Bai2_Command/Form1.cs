@@ -201,12 +201,33 @@ namespace Bai2_Command
                 cmd.Parameters.Add("@DCKH", SqlDbType.NVarChar).Value = txt_diaChi.Text;
                 cmd.Parameters.Add("@DTKH", SqlDbType.NVarChar).Value = txt_SDT.Text;
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Thêm thành công");
+                MessageBox.Show("Sửa thành công\n");
             }
 
             catch (Exception ex)
             {
-                MessageBox.Show("Thêm thất bại" + ex.Message);
+                MessageBox.Show("Sửa thất bại\n" + ex.Message);
+            }
+
+            load_data();
+        }
+
+
+        private void rmv_data()
+        {
+            string str = "delete from KhachHang where MaKH=@MaKH";
+
+            try
+            {
+                SqlCommand cmd = get_sqlCommand(str);
+                cmd.Parameters.Add("@MaKH", SqlDbType.Float).Value = float.Parse(txt_maKH.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Xóa thành công\n");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Xóa thất bại\n" + ex.Message);
             }
 
             load_data();
@@ -292,6 +313,11 @@ namespace Bai2_Command
         {
             enable_txts();
             state = STATE_EDIT;
+        }
+
+        private void btn_rmv_Click(object sender, EventArgs e)
+        {
+            rmv_data();
         }
     }
 }
