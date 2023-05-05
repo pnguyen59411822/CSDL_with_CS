@@ -29,6 +29,24 @@ namespace Bai2_Command
             return str;
         }
 
+        static public SqlCommand get_cmdLoadLv()
+        {
+            SqlCommand cmd = crt_cmd();
+            cmd.CommandText = "Select * from KhachHang";
+            return cmd;
+        }
+
+        static private SqlCommand crt_cmd()
+        {
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandTimeout = 60;
+            cmd.Connection = cnn;
+
+            return cmd;
+        }
+
         static public void connect_sql()
         {
             try
