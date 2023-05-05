@@ -40,6 +40,7 @@ namespace Bai2_Command
                     }
 
                     lv_data.Items.Add(item);
+                    lv_data.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 }
 
                 rdr.Close();
