@@ -85,6 +85,7 @@ namespace Bai2_Command
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            Sql_service.disconnect_sql();
             this.Close();
         }
 

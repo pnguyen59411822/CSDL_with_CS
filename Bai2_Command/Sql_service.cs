@@ -60,5 +60,10 @@ namespace Bai2_Command
                 MessageBox.Show("Kết nối sql server thất bại. Nguyên nhân:\n" + ex.Message);
             }
         }
+
+        static public void disconnect_sql()
+        {
+            cnn.Close();
+        }
     }
 }
