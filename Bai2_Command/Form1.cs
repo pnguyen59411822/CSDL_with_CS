@@ -15,6 +15,11 @@ namespace Bai2_Command
     public partial class Frm_main : Form
     {
         SqlConnection cnn = new SqlConnection();
+        int state = 0;
+
+        const int STATE_NORMAL = 0;
+        const int STATE_ADD    = 1;
+        const int STATE_EDIT   = 2;
 
         private string get_connectionString()
         {
@@ -129,7 +134,29 @@ namespace Bai2_Command
                 {
                     ((TextBox)ctrl).Enabled = false;
                 }    
-            }    
+            }
+        }
+
+        private void enable_txts()
+        {
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is TextBox)
+                {
+                    ((TextBox)ctrl).Enabled = true;
+                }
+            }
+        }
+
+        private void add_data()
+        {
+
+        }
+
+
+        private void edit_data()
+        {
+
         }
 
         public Frm_main()
@@ -187,7 +214,18 @@ namespace Bai2_Command
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-
+            if (state == STATE_ADD)
+            {
+                add_data();
+                disable_txts();
+            }
+            else if (state == STATE_EDIT)
+            {
+                edit_data();
+                disable_txts();
+            }
+            else
+                MessageBox.Show("Chưa có thay đổi để lưu");
         }
     }
 }
