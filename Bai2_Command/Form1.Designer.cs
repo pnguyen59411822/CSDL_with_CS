@@ -222,6 +222,7 @@
             this.btn_rmv.TabIndex = 14;
             this.btn_rmv.Text = "Xóa";
             this.btn_rmv.UseVisualStyleBackColor = false;
+            this.btn_rmv.Click += new System.EventHandler(this.btn_rmv_Click);
             // 
             // btn_save
             // 

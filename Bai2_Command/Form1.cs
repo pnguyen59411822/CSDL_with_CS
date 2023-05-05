@@ -203,5 +203,21 @@ namespace Bai2_Command
             enable_txts();
             state = STATE_EDIT;
         }
+
+        private void btn_rmv_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Sql_service.rmv_KH(float.Parse(lv_data.SelectedItems[0].SubItems[0].Text));
+                load_lv();
+                load_txts();
+                state = STATE_NO_CHANGE;
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Xóa dữ liệu thất bại. Nguyên nhân:\nBạn chưa chọn dòng cần xóa");
+            }
+        }
     }
 }

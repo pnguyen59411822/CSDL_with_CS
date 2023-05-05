@@ -102,6 +102,27 @@ namespace Bai2_Command
             }
         }
 
+        static public void rmv_KH(float maKH)
+        {
+            string str = "delete from KhachHang where MaKH=@MaKH";
+
+            try
+            {
+                SqlCommand cmd = crt_cmd();
+
+                cmd.CommandText = str;
+                cmd.Parameters.Add("@MaKH", maKH);
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Xóa dữ liệu thành công");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Xóa dữ liệu thất bại. Nguyên nhân:\n" + ex.Message);
+            }
+        }
+
         static public void connect_sql()
         {
             try
