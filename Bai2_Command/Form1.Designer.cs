@@ -135,6 +135,7 @@
             this.lv_data.TabIndex = 8;
             this.lv_data.UseCompatibleStateImageBehavior = false;
             this.lv_data.View = System.Windows.Forms.View.Details;
+            this.lv_data.SelectedIndexChanged += new System.EventHandler(this.lv_data_SelectedIndexChanged);
             // 
             // btn_exit
             // 

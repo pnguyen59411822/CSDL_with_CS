@@ -95,5 +95,10 @@ namespace Bai2_Command
             load_lv();
             load_txts();
         }
+
+        private void lv_data_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            load_txts();
+        }
     }
 }
