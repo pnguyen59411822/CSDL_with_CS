@@ -21,5 +21,10 @@ namespace Bai2_Command
         {
 
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

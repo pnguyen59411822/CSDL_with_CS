@@ -148,6 +148,7 @@
             this.btn_exit.TabIndex = 9;
             this.btn_exit.Text = "Thoát";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // btn_load
             // 
@@ -249,6 +250,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(934, 519);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_load);
             this.Controls.Add(this.btn_exit);
@@ -265,6 +267,7 @@
             this.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_main";
+            this.ShowInTaskbar = false;
             this.Text = "Danh sách khách hàng";
             this.Load += new System.EventHandler(this.Frm_main_Load);
             this.panel1.ResumeLayout(false);
