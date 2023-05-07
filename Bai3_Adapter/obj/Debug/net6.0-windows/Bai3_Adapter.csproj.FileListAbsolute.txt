@@ -1,0 +1,17 @@
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\bin\Debug\net6.0-windows\Bai3_Adapter.exe
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\bin\Debug\net6.0-windows\Bai3_Adapter.deps.json
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\bin\Debug\net6.0-windows\Bai3_Adapter.runtimeconfig.json
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\bin\Debug\net6.0-windows\Bai3_Adapter.dll
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\bin\Debug\net6.0-windows\Bai3_Adapter.pdb
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\Bai3_Adapter.csproj.AssemblyReference.cache
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\Bai3_Adapter.Frm_main.resources
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\Bai3_Adapter.csproj.GenerateResource.cache
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\Bai3_Adapter.GeneratedMSBuildEditorConfig.editorconfig
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\Bai3_Adapter.AssemblyInfoInputs.cache
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\Bai3_Adapter.AssemblyInfo.cs
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\Bai3_Adapter.csproj.CoreCompileInputs.cache
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\Bai3_Adapter.dll
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\refint\Bai3_Adapter.dll
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\Bai3_Adapter.pdb
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\Bai3_Adapter.genruntimeconfig.cache
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\net6.0-windows\ref\Bai3_Adapter.dll
