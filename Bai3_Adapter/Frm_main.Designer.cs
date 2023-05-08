@@ -107,6 +107,7 @@
             this.bdnvgt.CountItem = this.bindingNavigatorCountItem;
             this.bdnvgt.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bdnvgt.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bdnvgt.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.bdnvgt.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,

@@ -20,6 +20,8 @@ namespace Bai3_Adapter
         private void Frm_main_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+
+            Sql_service.connect_sql();
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

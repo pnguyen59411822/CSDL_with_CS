@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sql_service.cs" />
     <EmbeddedResource Include="Frm_detail.resx">
       <DependentUpon>Frm_detail.cs</DependentUpon>
     </EmbeddedResource>
