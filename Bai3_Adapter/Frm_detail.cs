@@ -38,5 +38,10 @@ namespace Bai3_Adapter
         {
             CenterToParent();
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

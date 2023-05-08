@@ -119,7 +119,7 @@
             // btn_save
             // 
             this.btn_save.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btn_save.Location = new System.Drawing.Point(242, 209);
@@ -132,7 +132,7 @@
             // btn_exit
             // 
             this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btn_exit.Location = new System.Drawing.Point(381, 209);
@@ -141,12 +141,14 @@
             this.btn_exit.TabIndex = 10;
             this.btn_exit.Text = "Thoát";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // Frm_detail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(701, 272);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.txt_SDT);
