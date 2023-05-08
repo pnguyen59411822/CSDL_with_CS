@@ -17,7 +17,28 @@ namespace Bai3_Adapter
 
         static Sql_service()
         {
+            init_cnn();
+            init_tbKH();
+        }
+
+        static void init_cnn()
+        {
             cnn.ConnectionString = get_connectionString();
+        }
+
+
+        static void init_tbKH()
+        {
+            try
+            {
+                SqlDataAdapter adt = crt_adtKH();
+                adt.Fill(tb_KH);
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Khởi tạo bảng KhachHang thất bại. Nguyên nhân:\n" + ex.Message);
+            }
         }
 
 
@@ -37,23 +58,42 @@ namespace Bai3_Adapter
 
         static public DataTable get_tbKH()
         {
-            DataTable tb = new DataTable();
+            return tb_KH;
+        }
 
-            try
+
+        static private SqlCommand crt_cmdKH()
+        {
+            return new SqlCommand("Select * from KhachHang", cnn);
+        }
+
+
+        static private SqlDataAdapter crt_adtKH()
+        {
+            SqlCommand cmd = crt_cmdKH();
+            SqlDataAdapter adt = new SqlDataAdapter();
+
+            adt.SelectCommand = cmd;
+
+            return adt;
+        }
+
+
+        static public void upd_tbKH()
+        {
+            DataTable tb_change = tb_KH.GetChanges();
+
+            if(tb_change == null)
             {
-                SqlCommand cmd = new SqlCommand("Select * from KhachHang", cnn);
-                SqlDataAdapter adt = new SqlDataAdapter();
-
-                adt.SelectCommand = cmd;
-                adt.Fill(tb);
+                MessageBox.Show("Dữ liệu chưa thay đổi");
+                return;
             }
 
-            catch(Exception ex)
-            {
-                MessageBox.Show("Lấy data của bảng KhachHang thất bại. Nguyên nhân:\n" + ex.Message);
-            }
+            SqlDataAdapter adt = crt_adtKH();
+            SqlCommandBuilder cmb  = new SqlCommandBuilder(adt);
 
-            return tb;
+            adt.Update(tb_KH);
+            MessageBox.Show("Đã cập nhập " + tb_change.Rows.Count + " dòng");
         }
 
 
