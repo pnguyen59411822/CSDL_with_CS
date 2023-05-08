@@ -1,0 +1,11 @@
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\bin\Debug\Bai3_Adapter.exe.config
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\bin\Debug\Bai3_Adapter.exe
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\bin\Debug\Bai3_Adapter.pdb
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\Bai3_Adapter.csproj.AssemblyReference.cache
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\Bai3_Adapter.csproj.SuggestedBindingRedirects.cache
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\Bai3_Adapter.Frm_main.resources
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\Bai3_Adapter.Properties.Resources.resources
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\Bai3_Adapter.csproj.GenerateResource.cache
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\Bai3_Adapter.csproj.CoreCompileInputs.cache
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\Bai3_Adapter.exe
+F:\Phuc\LHU\LHU _ Nam 3 _ hoc ky 2\CSDL C#\CSDL C# _ Bai tap thuc hanh v2\Bai3_Adapter\obj\Debug\Bai3_Adapter.pdb
