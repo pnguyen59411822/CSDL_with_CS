@@ -24,13 +24,15 @@ namespace Bai3_Adapter
                 bds.BindingComplete += new BindingCompleteEventHandler(fnc_bindingComplete);
                 bds.DataSource = Sql_service.get_tbKH();
 
+                dtgrv.Columns.Clear();
                 dtgrv.DataSource = bds;
 
-                dtgrv.Columns.Clear();
-                dtgrv.Columns.Add("Mã KH", "Mã KH");
-                dtgrv.Columns.Add("Tên KH", "Tên KH");
-                dtgrv.Columns.Add("Địa chỉ", "Địa chỉ");
-                dtgrv.Columns.Add("Số điện thoại", "Số điện thoại");
+                for(int i=0; i < dtgrv.Columns.Count; i++)
+                {
+                    dtgrv.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                }
+
+                dtgrv.Columns[dtgrv.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }                
 
             catch (Exception ex)
