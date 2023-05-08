@@ -67,5 +67,11 @@ namespace Bai3_Adapter
         {
             Sql_service.upd_tbKH();
         }
+
+        private void btn_detail_Click(object sender, EventArgs e)
+        {
+            Frm_detail frm = new Frm_detail(bds);
+            frm.Show();
+        }
     }
 }

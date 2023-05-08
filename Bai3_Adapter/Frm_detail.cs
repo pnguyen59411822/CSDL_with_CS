@@ -17,6 +17,11 @@ namespace Bai3_Adapter
             InitializeComponent();
         }
 
+        public Frm_detail(BindingSource bds)
+        {
+            InitializeComponent();
+        }    
+
         private void Frm_detail_Load(object sender, EventArgs e)
         {
             CenterToParent();

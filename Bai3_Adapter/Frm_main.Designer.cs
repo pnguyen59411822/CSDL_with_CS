@@ -73,6 +73,7 @@
             this.btn_detail.TabIndex = 1;
             this.btn_detail.Text = "Chi tiết";
             this.btn_detail.UseVisualStyleBackColor = true;
+            this.btn_detail.Click += new System.EventHandler(this.btn_detail_Click);
             // 
             // btn_save
             // 
