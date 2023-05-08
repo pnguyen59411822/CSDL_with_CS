@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ namespace Bai3_Adapter
     static internal class Sql_service
     {
         static private SqlConnection cnn = new SqlConnection();
+        static private DataTable tb_KH = new DataTable();
 
 
         static Sql_service()
@@ -33,6 +35,28 @@ namespace Bai3_Adapter
         }
 
 
+        static public DataTable get_tbKH()
+        {
+            DataTable tb = new DataTable();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Select * from KhachHang", cnn);
+                SqlDataAdapter adt = new SqlDataAdapter();
+
+                adt.SelectCommand = cmd;
+                adt.Fill(tb);
+            }
+
+            catch(Exception ex)
+            {
+                MessageBox.Show("Lấy data của bảng KhachHang thất bại. Nguyên nhân:\n" + ex.Message);
+            }
+
+            return tb;
+        }
+
+
         static public void connect_sql()
         {
             try
@@ -47,6 +71,7 @@ namespace Bai3_Adapter
                 MessageBox.Show("Kết nối sql server thất bại. Nguyên nhân:\n" + ex.Message);
             }
         }
+
 
         static public void disconnect_sql()
         {
