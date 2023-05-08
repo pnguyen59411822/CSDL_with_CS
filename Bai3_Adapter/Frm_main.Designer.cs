@@ -64,7 +64,7 @@
             // btn_detail
             // 
             this.btn_detail.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_detail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_detail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_detail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_detail.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btn_detail.Location = new System.Drawing.Point(12, 132);
@@ -77,7 +77,7 @@
             // btn_save
             // 
             this.btn_save.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btn_save.Location = new System.Drawing.Point(12, 72);
@@ -90,7 +90,7 @@
             // btn_exit
             // 
             this.btn_exit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btn_exit.Location = new System.Drawing.Point(12, 12);
@@ -167,7 +167,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(44, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
