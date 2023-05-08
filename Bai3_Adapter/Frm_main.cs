@@ -16,5 +16,10 @@ namespace Bai3_Adapter
         {
             InitializeComponent();
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

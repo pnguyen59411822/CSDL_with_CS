@@ -34,7 +34,6 @@
             this.btn_detail = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.bds = new System.Windows.Forms.BindingSource(this.components);
             this.bdnvgt = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -47,10 +46,11 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bds = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdnvgt)).BeginInit();
             this.bdnvgt.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bds)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgrv
@@ -99,6 +99,7 @@
             this.btn_exit.TabIndex = 3;
             this.btn_exit.Text = "Thoát";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // bdnvgt
             // 
@@ -230,10 +231,10 @@
             this.Name = "Frm_main";
             this.Text = "Danh sách khách hàng";
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdnvgt)).EndInit();
             this.bdnvgt.ResumeLayout(false);
             this.bdnvgt.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bds)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
