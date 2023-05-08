@@ -43,5 +43,10 @@ namespace Bai3_Adapter
         {
             Close();
         }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            Sql_service.upd_tbKH();
+        }
     }
 }
