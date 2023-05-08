@@ -16,5 +16,10 @@ namespace Bai3_Adapter
         {
             InitializeComponent();
         }
+
+        private void Frm_detail_Load(object sender, EventArgs e)
+        {
+            CenterToParent();
+        }
     }
 }

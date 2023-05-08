@@ -161,6 +161,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Frm_detail";
             this.Text = "Chi tiết";
+            this.Load += new System.EventHandler(this.Frm_detail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -17,6 +17,11 @@ namespace Bai3_Adapter
             InitializeComponent();
         }
 
+        private void Frm_main_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+        }
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Close();

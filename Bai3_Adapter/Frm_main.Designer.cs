@@ -221,6 +221,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 520);
+            this.ControlBox = false;
             this.Controls.Add(this.bdnvgt);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_save);
@@ -230,6 +231,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Frm_main";
             this.Text = "Danh sách khách hàng";
+            this.Load += new System.EventHandler(this.Frm_main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdnvgt)).EndInit();
             this.bdnvgt.ResumeLayout(false);
